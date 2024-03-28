@@ -17,13 +17,13 @@ const collectEmployees = function() {
   while (continueAdding) {
 
     // Prompts to collect the employee's information
-    const employeeFirstName = prompt("Please enter the employee's first Name:");
-    const employeeLastName = prompt("Please enter the employee's last Name:");
+    const employeeFirstName = prompt("Please enter the employee's first name:");
+    const employeeLastName = prompt("Please enter the employee's last name:");
     const employeeSalary = prompt("Please enter the employee's salary:");
 
     // Alerts the user that they entered an invalid salary amount
     if(isNaN(employeeSalary)) {
-      employeeSalary = alert("Invalid salary amount was enterd.");
+      employeeSalary = alert("Invalid salary amount was entered.");
       employeeSalary = prompt("Please enter the salary amount again:");
     }
 
@@ -42,7 +42,7 @@ const collectEmployees = function() {
 
     
     // If user chooses to add another employee then the while loop will continue, otherwise it will end
-    let confirm = window.confirm("Do you want to add another employee?")
+    let confirm = window.confirm("Do you want to add another employee?");
 
     if (!confirm) {
       return employeesArray;
@@ -54,6 +54,15 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+
+  let salaryTotal = 0;
+
+  for (let i = 0; i < employeesArray.length; i++) {
+    salaryTotal += employeesArray[i].salary;
+  }
+
+  
+
 }
 
 
