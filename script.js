@@ -34,6 +34,13 @@ const collectEmployees = function() {
       salary: parseFloat(employeeSalary)
     }
 
+    // Displays the objects in the console
+    console.log(employeesInfo);
+
+    // Adds the objects to the empty array employeeArray
+    employeesArray.push(employeeInfo);
+
+
 
 
 
