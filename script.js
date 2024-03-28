@@ -19,12 +19,12 @@ const collectEmployees = function() {
     // Prompts to collect the employee's information
     const employeeFirstName = prompt("Please enter the employee's first name:");
     const employeeLastName = prompt("Please enter the employee's last name:");
-    const employeeSalary = prompt("Please enter the employee's salary:");
+    let employeeSalary = prompt("Please enter the employee's salary:");
 
     // Alerts the user that they entered an invalid salary amount
     if(isNaN(employeeSalary)) {
-      employeeSalary = alert("Invalid salary amount was entered.");
-      employeeSalary = prompt("Please enter the salary amount again:");
+      employeeSalary = alert("Invalid salary amount was entered.")
+      employeeSalary = prompt ("Please enter the salary amount again:")
     }
 
     // Adds employee's information to an object
@@ -75,7 +75,7 @@ const getRandomEmployee = function(employeesArray) {
 
   // A random array index is determined to find a random employee and then they are displayed on the console
   const randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)];
-  console.log(`The selected random employee is: ${randomEmployee.firstName} ${employeesArray.lastName}`)
+  console.log(`The selected random employee is: ${randomEmployee.firstName} ${randomEmployee.lastName}`)
 
 }
 
