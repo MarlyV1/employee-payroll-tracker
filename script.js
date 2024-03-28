@@ -27,6 +27,13 @@ const collectEmployees = function() {
       employeeSalary = prompt("Please enter the salary amount again:");
     }
 
+    // Adds employee's information to an object
+    let employeeInfo = {
+      firstName: employeeFirstName,
+      lastName: employeeLastName,
+      salary: parseFloat(employeeSalary)
+    }
+
 
 
 
