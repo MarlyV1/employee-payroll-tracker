@@ -28,7 +28,7 @@ const collectEmployees = function() {
     }
 
     // Adds employee's information to an object
-    let employeeInfo = {
+    let employeesInfo = {
       firstName: employeeFirstName,
       lastName: employeeLastName,
       salary: parseFloat(employeeSalary)
@@ -38,14 +38,16 @@ const collectEmployees = function() {
     console.log(employeesInfo);
 
     // Adds the objects to the empty array employeeArray
-    employeesArray.push(employeeInfo);
+    employeesArray.push(employeesInfo);
 
+    
+    // If user chooses to add another employee then the while loop will continue, otherwise it will end
+    let confirm = window.confirm("Do you want to add another employee?")
 
-
-
-
+    if (!confirm) {
+      return employeesArray;
+    }
   }
-
 }
 
    
