@@ -74,7 +74,7 @@ const getRandomEmployee = function(employeesArray) {
 
   // A random array index is determined to find a random employee and then they are displayed on the console
   const randomEmployee = employeesArray[Math.floor(Math.random() * employeesArray.length)];
-  console.log(`The selected random employee is: ${randomEmployee.firstName} ${randomEmployee.lastName}`)
+  console.log(`congratulations! Our random drawing winner is ${randomEmployee.firstName} ${randomEmployee.lastName}!`)
 
 }
 
