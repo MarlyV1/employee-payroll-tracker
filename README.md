@@ -10,3 +10,4 @@ Once the payroll manager clicks on the button to add an employee, they are then 
 
 ![alt text](assets/images/screenshot.png)
 
+<a href="https://marlyv1.github.io/employee-payroll-tracker/">Deployed Application</a>
