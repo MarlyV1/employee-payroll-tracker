@@ -64,7 +64,8 @@ const displayAverageSalary = function(employeesArray) {
 
   // Salary average is being calculated and the value is shown on the console
   const salaryAverge = salaryTotal / employeesArray.length;
-  console.log(`The employee salary average is:`, salaryAverge.toFixed(2))
+  console.log(`The employee salary average is:`, `$` + `${salaryAverge.toFixed(2)}`)
+
 }
 
 
