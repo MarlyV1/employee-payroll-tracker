@@ -21,12 +21,10 @@ const collectEmployees = function() {
     const employeeLastName = prompt("Please enter the employee's last name:");
     let employeeSalary = prompt("Please enter the employee's salary:");
 
-    // Alerts the user that they entered an invalid salary amount
-    if(isNaN(employeeSalary)) {
-      employeeSalary = alert("Invalid salary amount was entered.")
-      employeeSalary = prompt ("Please enter the salary amount again:")
-    }
+    // If an invalid salary amount is entered then the value defaults to 0
+    if(isNaN(employeeSalary)) employeeSalary = 0;
 
+    
     // Adds employee's information to an object
     let employeesInfo = {
       firstName: employeeFirstName,
